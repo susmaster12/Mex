@@ -30,7 +30,7 @@ def promotion():
 def image_mars():
     return f'''
     <h1> Жди нас, Марс! </h1>
-    scr="{url_for('static', filename="img/mars.png")}" 
+    <img src="{url_for('static', filename='img/mars.png')}"  
            alt="здесь должна была быть картинка, но не нашлась" title="010010010">
 <p> ВОт она красная планета </p>
 '''
@@ -51,20 +51,19 @@ def promotion_image():
                     <title>Привет, Яндекс!</title>
                   </head>
                   <body>
-                    <h1>Привет, Яндекс!</h1>
                         <h1> Жди нас, Марс! </h1>
-                         scr="{url_for('static', filename="img/mars.png")}" 
-                             alt="здесь должна была быть картинка, но не нашлась" title="010010010">
-                    <div class="alert alert-danger" role="alert">
+                            <img src="{url_for('static', filename='img/mars.png')}"  
+                                alt="здесь должна была быть картинка, но не нашлась" title="010010010">
+                    <div class="alert alert-secondary" role="alert">
                         Человечество вырастает из детства.<br>
                     </div>
-                    <div class="alert alert-danger" role="alert">
+                    <div class="alert alert-success" role="alert">
                         Человечеству мала одна планета.<br>
                     </div>
-                    <div class="alert alert-danger" role="alert">
+                    <div class="alert alert-secondary" role="alert">
                         Мы сделаем обитаемыми безжизненные пока планеты.<br>
                     </div>
-                    <div class="alert alert-danger" role="alert">
+                    <div class="alert alert-warning" role="alert">
                         И начнем с Марса!<br>
                     </div>
                     <div class="alert alert-danger" role="alert">
